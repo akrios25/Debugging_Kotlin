@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         var denominator = 4
         Log.d(TAG,"${denominator}")
         repeat(4) {
+            Thread.sleep(3000)
             Log.v(TAG,"${numerator / denominator}")
             denominator--
         }
